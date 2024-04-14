@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<agenda>
+    <alarmas>
+        <alarma type="despertador" prioridad="alta"  tono="moonwalk">
+            <diaHora>
+                <date>
+                    <dia>15</dia>
+                    <mes>04</mes>
+                    <year>2024</year>
+                </date>
+                <time>
+                    <hora>05</hora>
+                    <minuto>15</minuto>
+                    <segundo>00</segundo>
+                </time>
+            </diaHora>
+            <asunto lugar="Arriondas">A trabajar!!!!</asunto>
+        </alarma>
+        <alarma type="recordatorio" prioridad="media"  tono="bell">
+            <diaHora>
+                <date>
+                    <dia>16</dia>
+                    <mes>04</mes>
+                    <year>2024</year>
+                </date>
+                <time>
+                    <hora>10</hora>
+                    <minuto>30</minuto>
+                    <segundo>00</segundo>
+                </time>
+            </diaHora>
+            <asunto lugar="cantina_Fabrica">Reunión del equipo de formacion</asunto>
+        </alarma>
+        <alarma type="evento" prioridad="baja" tono="alarm">
+            <diaHora>
+                <date>
+                    <dia>20</dia>
+                    <mes>04</mes>
+                    <year>2024</year>
+                </date>
+                <time>
+                    <hora>08</hora>
+                    <minuto>00</minuto>
+                    <segundo>00</segundo>
+                </time>
+            </diaHora>
+            <asunto lugar="polideportivo_Arriondas">Campeonato juegos escolares de escalada</asunto>
+        </alarma>
+        <alarma type="recordatorio" prioridad="alta" tono="chime">
+            <diaHora>
+                <date>
+                    <dia>21</dia>
+                    <mes>04</mes>
+                    <year>2024</year>
+                </date>
+                <time>
+                    <hora>15</hora>
+                    <minuto>45</minuto>
+                    <segundo>00</segundo>
+                </time>
+            </diaHora>
+            <asunto lugar="Cove_Galizia">Confirmar reserva de hotel</asunto>
+        </alarma>
+    </alarmas>
+    <correos>
+        <correo entradaSalida="salida">
+            <remitente>mi.correo@gmail.com</remitente>
+            <destinatario>amigo@ejemplo.com</destinatario>
+            <asunto>Invitación para la fiesta</asunto>
+            <imagenes extension=".jpg">
+                <imagen>imagen1.jpg</imagen>
+                <imagen>imagen2.jpg</imagen>
+            </imagenes>
+        </correo>
+        <correo entradaSalida="entrada">
+            <remitente>cliente@empresa.com</remitente>
+            <destinatario>mi.correo@gmail.com</destinatario>
+            <asunto>Propuesta de proyecto</asunto>
+            <imagenes extension=".png">
+                <imagen>documento.png</imagen>
+            </imagenes>
+        </correo>
+    </correos>
+    <contactos>
+        <contacto>
+            <nombre idioma="espanol" empresaSiNo="no">Juan Pérez</nombre>
+            <telefono type="fijo">987654321</telefono>
+        </contacto>
+        <contacto>
+            <nombre idioma="ingles" empresaSiNo="si">Mary Smith</nombre>
+            <telefono type="movil">123456789</telefono>
+        </contacto>
+        <contacto>
+            <nombre idioma="frances" empresaSiNo="no">Jean Dupont</nombre>
+            <telefono type="fijo">987654321</telefono>
+        </contacto>
+        <contacto>
+            <nombre idioma="aleman" empresaSiNo="si">Hans Müller</nombre>
+            <telefono type="movil">012345678</telefono>
+        </contacto>
+    </contactos>
+</agenda>

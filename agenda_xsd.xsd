@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <!--elementos simples-->
+    
+    <!--fecha alarma-->
+    <xs:simpleType name="dia">
+        <xs:restriction  base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="31"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="mes">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="12"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="year">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="2024"/>
+            <xs:maxInclusive value="2050"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!--time alarma-->
+    <xs:simpleType name="hora">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxExclusive value="24"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="minuto">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxExclusive value="60"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--elementos complejos-->
+
+    <!--fecha alarma-->
+    <xs:complexType name="date">
+        <xs:sequence>
+            <xs:element name="dia" type="dia"/>
+            <xs:element name="mes" type="mes"/>
+            <xs:element name="year" type="year"/>
+        </xs:sequence>
+    </xs:complexType>
+    <!--hora alarma-->
+    <xs:complexType name="time">
+        <xs:sequence>
+            <xs:element name="hora" type="hora"/>
+            <xs:element name="minuto" type="minuto"/>
+            <xs:element name="segundo" type="segundo"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
